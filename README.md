@@ -1,7 +1,8 @@
 # Playing around with IPFS 
 
-The python client libraries for IPFS seem out of date, and IPFS exposes a web API, so I'm
-going to see if I can get something basic to write to IPFS with a python http client.
+The python client libraries for IPFS that I tried were not compatible with the
+0.11 version. IPFS exposes a web API though, so I wanted to see if I could do a
+basic to write to IPFS with a python http client.
 
 ## Done
 
@@ -19,6 +20,7 @@ going to see if I can get something basic to write to IPFS with a python http cl
 
 import requests
 import dumper
+
 # post should look like:
 # Abspath: /absolute/path/to/file.txt
 # Content-Disposition: form-data; name="file"; filename="folderName%2Ffile.txt"
